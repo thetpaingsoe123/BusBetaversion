@@ -89,5 +89,13 @@
         <item>ေတာ္​ဝင္​မႏၲလာ</item>
         <item>နန္​းထိုက္​စံ</item>
     </string-array>
+    <string-array name="items">
+        <item>Uplode Profile</item>
+        <item>History</item>
+        <item>Ticket</item>
+        <item>Invite</item>
+        <item>Content us</item>
+        <item>About</item>
 
+    </string-array>
 </resources>
