@@ -1,6 +1,7 @@
 package mm.com.thetpaingsoe.busticketapp;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
@@ -76,12 +77,18 @@ public class MainActivity extends AppCompatActivity
             return true;
         }
 
+
         return super.onOptionsItemSelected(item);
     }
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        return false;
+        int id = item.getItemId();
+        if (id == R.id.nav_uploaduser){
+            Intent upload = new Intent(MainActivity.this,UploadProfile.class);
+            startActivity(upload);
+        }
+        return true;
     }
 
     @Override
