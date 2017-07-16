@@ -118,6 +118,10 @@ public class MainActivity extends AppCompatActivity
                 Intent upload = new Intent(MainActivity.this,UploadProfile.class);
                 startActivity(upload);
             }
+            else if (choice == 2){
+                Intent upload = new Intent(MainActivity.this,MoreDetail.class);
+                startActivity(upload);
+            }
         }
     }
 }

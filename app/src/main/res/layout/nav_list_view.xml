@@ -7,14 +7,14 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginBottom="5dp"
-        android:background="#5df2d6">
+       >
         <ImageView
             android:id="@+id/imgView"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:padding="10dp"
             android:src="@drawable/profile"
-            android:background="@drawable/profile_cycle"
+
             android:layout_gravity="center"
             />
 

@@ -26,7 +26,8 @@
         <activity
             android:name=".BusListActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".UploadProfile"></activity>
+        <activity android:name=".UploadProfile" />
+        <activity android:name=".MoreDetail"></activity>
     </application>
 
 </manifest>
