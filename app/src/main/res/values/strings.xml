@@ -98,5 +98,8 @@
         <item>About</item>
 
     </string-array>
+<<<<<<< HEAD
     <string name="title_activity_upload_profile">UploadProfile</string>
+=======
+>>>>>>> 3ad9437daf05ecfceb781ac203c8e9539808e294
 </resources>

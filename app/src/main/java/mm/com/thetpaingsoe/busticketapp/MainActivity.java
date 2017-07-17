@@ -17,6 +17,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+<<<<<<< HEAD
 
 import com.daimajia.slider.library.SliderLayout;
 import com.daimajia.slider.library.SliderTypes.BaseSliderView;
@@ -24,6 +25,9 @@ import com.daimajia.slider.library.SliderTypes.TextSliderView;
 import com.daimajia.slider.library.Tricks.ViewPagerEx;
 
 import java.util.HashMap;
+=======
+import android.widget.Toast;
+>>>>>>> 3ad9437daf05ecfceb781ac203c8e9539808e294
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -38,16 +42,28 @@ public class MainActivity extends AppCompatActivity
     private ListView listV;
     private String[] arg;
     private NavListAdapter listadapter;
+<<<<<<< HEAD
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+=======
+
+
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+       //List view for nav
+>>>>>>> 3ad9437daf05ecfceb781ac203c8e9539808e294
         listV = (ListView)findViewById(R.id.listview);
         arg = getResources().getStringArray(R.array.items);
         listadapter = new NavListAdapter(getApplicationContext(),arg);
         listV.setAdapter(listadapter);
         listV.setOnItemClickListener(new navchoice());
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3ad9437daf05ecfceb781ac203c8e9539808e294
         ButterKnife.bind(this, this);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -96,12 +112,18 @@ public class MainActivity extends AppCompatActivity
             return true;
         }
 
+
         return super.onOptionsItemSelected(item);
     }
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        return false;
+        int id = item.getItemId();
+        if (id == R.id.nav_uploaduser){
+            Intent upload = new Intent(MainActivity.this,UploadProfile.class);
+            startActivity(upload);
+        }
+        return true;
     }
 
     @Override
@@ -113,7 +135,11 @@ public class MainActivity extends AppCompatActivity
 
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+<<<<<<< HEAD
             int choice = position;
+=======
+             int choice = position;
+>>>>>>> 3ad9437daf05ecfceb781ac203c8e9539808e294
             if (choice == 0){
                 Intent upload = new Intent(MainActivity.this,UploadProfile.class);
                 startActivity(upload);

@@ -45,6 +45,7 @@ public class BusChairAdapter extends BaseAdapter {
         return imageView;
     }
     public Integer[] ChairIds = {
+<<<<<<< HEAD
             R.drawable.num1, R.drawable.num2,
             R.drawable.num3, R.drawable.num4,
             R.drawable.num5, R.drawable.num6,
@@ -68,6 +69,18 @@ public class BusChairAdapter extends BaseAdapter {
             R.drawable.num41,R.drawable.num42,
             R.drawable.num43,R.drawable.num44
 
+=======
+            R.drawable.car_seat, R.drawable.car_seat,
+            R.drawable.car_seat, R.drawable.car_seat,
+            R.drawable.car_seat, R.drawable.car_seat,
+            R.drawable.car_seat, R.drawable.car_seat,
+            R.drawable.car_seat, R.drawable.car_seat,
+            R.drawable.car_seat, R.drawable.car_seat,
+            R.drawable.car_seat, R.drawable.car_seat,
+            R.drawable.car_seat, R.drawable.car_seat,
+            R.drawable.car_seat, R.drawable.car_seat,
+            R.drawable.car_seat, R.drawable.car_seat
+>>>>>>> 3ad9437daf05ecfceb781ac203c8e9539808e294
 
     };
 }

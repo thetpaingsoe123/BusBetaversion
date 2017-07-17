@@ -8,6 +8,7 @@
     tools:context="mm.com.thetpaingsoe.busticketapp.MoreDetail">
 
 
+<<<<<<< HEAD
     <GridView
         android:id="@+id/grid_view"
         android:layout_width="200dp"
@@ -61,6 +62,77 @@
         android:layout_below="@id/li_two"
         android:id="@+id/txt_view_items"
         android:layout_marginTop="10dp"
+=======
+        <GridView
+            android:id="@+id/grid_view_left"
+            android:layout_width="100dp"
+            android:layout_height="330dp"
+            android:layout_marginLeft="30dp"
+            android:numColumns="auto_fit"
+            android:verticalSpacing="5dp"
+            android:stretchMode="columnWidth"
+            android:gravity="center"/>
+        <GridView
+            android:id="@+id/grid_view_right"
+            android:layout_width="100dp"
+            android:layout_height="330dp"
+            android:numColumns="auto_fit"
+            android:layout_marginLeft="150dp"
+            android:verticalSpacing="5dp"
+            android:stretchMode="columnWidth"
+            android:gravity="center"/>
+        <GridView
+            android:id="@+id/grid_view_buttom"
+            android:layout_width="220dp"
+            android:layout_height="30dp"
+            android:numColumns="5"
+            android:layout_marginTop="340dp"
+            android:layout_marginLeft="30dp"
+            android:verticalSpacing="5dp"
+            android:stretchMode="columnWidth"
+            android:gravity="center"/>
+      <LinearLayout
+          android:id="@+id/li_one"
+          android:layout_below="@id/grid_view_buttom"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Enter Your Name"
+                  android:textSize="20dp"
+                  android:textStyle="bold"/>
+              <EditText
+                  android:id="@+id/buy_name"
+                  android:layout_width="180dp"
+                  android:layout_marginLeft="20dp"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/text_box"/>
+      </LinearLayout>
+        <LinearLayout
+            android:id="@+id/li_two"
+            android:layout_below="@id/li_one"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter Your NRC"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+                <EditText
+                    android:id="@+id/buy_nrc"
+                    android:layout_width="180dp"
+                    android:layout_marginLeft="35dp"
+                    android:hint="14/kakana(n)123456"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_box"/>
+        </LinearLayout>
+    <TextView
+        android:layout_below="@id/li_two"
+        android:id="@+id/txt_view_items"
+>>>>>>> 3ad9437daf05ecfceb781ac203c8e9539808e294
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="How many ticket you want buy?"
@@ -122,7 +194,10 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_marginLeft="100dp"
+=======
+>>>>>>> 3ad9437daf05ecfceb781ac203c8e9539808e294
         android:layout_below="@id/rdgroup">
         <Button
             android:id="@+id/btn_check"

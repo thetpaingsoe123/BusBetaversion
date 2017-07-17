@@ -24,6 +24,7 @@ public class MoreDetail extends AppCompatActivity {
         btncheck.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+<<<<<<< HEAD
                 switch (rdGroup.getCheckedRadioButtonId()-2131624100){
                     case 0 : show.setText("Cost 3500ks for 1 ticket");
                         break;
@@ -43,6 +44,28 @@ public class MoreDetail extends AppCompatActivity {
                         break;
                     case 8 :show.setText("Cost 31500ks for 9 tickets");
                         break;
+=======
+                switch (rdGroup.getCheckedRadioButtonId()-2131624080){
+                    case 0 : show.setText("Cost 3500ks for 1 ticket");
+                        break;
+                    case 1 :show.setText("Cost 7000ks for 2 ticket");
+                        break;
+                    case 2 : show.setText("Cost 10500ks for 3 ticket");
+                        break;
+                    case 3 :show.setText("Cost 14000ks for 4 ticket");
+                        break;
+                    case 4 : show.setText("Cost 17500ks for 5 ticket");
+                        break;
+                    case 5 :show.setText("Cost 21000ks for 6 ticket");
+                        break;
+                    case 6 : show.setText("Cost 24500ks for 7 ticket");
+                        break;
+                    case 7 :show.setText("Cost 28000ks for 8 ticket");
+                        break;
+                    case 8 :show.setText("Cost 31500ks for 9 ticket");
+                        break;
+
+>>>>>>> 3ad9437daf05ecfceb781ac203c8e9539808e294
                 }
 
             }
@@ -57,8 +80,17 @@ public class MoreDetail extends AppCompatActivity {
 
 
 
+<<<<<<< HEAD
         GridView gridview = (GridView) findViewById(R.id.grid_view);
         gridview.setAdapter(new BusChairAdapter(this));
 
+=======
+        GridView gridview_left = (GridView) findViewById(R.id.grid_view_left);
+        gridview_left.setAdapter(new BusChairAdapter(this));
+        GridView gridview_right = (GridView) findViewById(R.id.grid_view_right);
+        gridview_right.setAdapter(new BusChairAdapter(this));
+        GridView gridview_buttom = (GridView) findViewById(R.id.grid_view_buttom);
+        gridview_buttom.setAdapter(new BusChairAdapter(this));
+>>>>>>> 3ad9437daf05ecfceb781ac203c8e9539808e294
     }
 }

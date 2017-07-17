@@ -16,7 +16,11 @@ public class NavListAdapter extends BaseAdapter {
 
     private Context context;
     private String[]arg;
+<<<<<<< HEAD
     private int imgId[] = {R.drawable.profile, R.drawable.history, R.drawable.ticket, R.drawable.invite, R.drawable.content, R.drawable.about};
+=======
+    private int imgId[] = {R.drawable.profile,R.drawable.history,R.drawable.ticket,R.drawable.invite,R.drawable.content,R.drawable.about};
+>>>>>>> 3ad9437daf05ecfceb781ac203c8e9539808e294
     public NavListAdapter(Context context,String arg[]){
         this.context=context;
         this.arg=arg;

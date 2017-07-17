@@ -2,7 +2,10 @@ package mm.com.thetpaingsoe.busticketapp;
 
 import android.content.Intent;
 import android.os.Bundle;
+<<<<<<< HEAD
 import android.support.v7.app.AppCompatActivity;
+=======
+>>>>>>> 3ad9437daf05ecfceb781ac203c8e9539808e294
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
 import android.view.View;
