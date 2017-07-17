@@ -25,13 +25,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".User_Register" />
-        <activity android:name=".BusListActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
-
-
+        <activity
+            android:name=".BusListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".UploadProfile" />
+        <activity android:name=".MoreDetail"></activity>
     </application>
 
 </manifest>

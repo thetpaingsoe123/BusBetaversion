@@ -1,6 +1,7 @@
 package mm.com.thetpaingsoe.busticketapp;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
@@ -13,6 +14,9 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ListView;
 
 import com.daimajia.slider.library.SliderLayout;
 import com.daimajia.slider.library.SliderTypes.BaseSliderView;
@@ -31,10 +35,19 @@ public class MainActivity extends AppCompatActivity
     @BindView(R.id.rv_bus_list)
     RecyclerView rvBusList;
 
-    @Override
+    private ListView listV;
+    private String[] arg;
+    private NavListAdapter listadapter;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        listV = (ListView)findViewById(R.id.listview);
+        arg = getResources().getStringArray(R.array.items);
+        listadapter = new NavListAdapter(getApplicationContext(),arg);
+        listV.setAdapter(listadapter);
+        listV.setOnItemClickListener(new navchoice());
+
         ButterKnife.bind(this, this);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -94,5 +107,21 @@ public class MainActivity extends AppCompatActivity
     @Override
     public void onItemClick(String name) {
         startActivity(BusListActivity.newIntent(this,name));
+    }
+
+    public class navchoice implements AdapterView.OnItemClickListener{
+
+        @Override
+        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            int choice = position;
+            if (choice == 0){
+                Intent upload = new Intent(MainActivity.this,UploadProfile.class);
+                startActivity(upload);
+            }
+            else if (choice == 2){
+                Intent upload = new Intent(MainActivity.this,MoreDetail.class);
+                startActivity(upload);
+            }
+        }
     }
 }

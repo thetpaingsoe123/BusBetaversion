@@ -49,6 +49,15 @@
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header_main"
         android:background="#FFFFFF"
-        app:menu="@menu/activity_main_drawer" />
+         >
+    <ListView
+        android:layout_marginTop="160dp"
+
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+    </android.support.design.widget.NavigationView>
 
 </android.support.v4.widget.DrawerLayout>
