@@ -123,7 +123,8 @@ public class BusListActivity extends AppCompatActivity implements BusListAdapter
 
     @Override
     public void onBusClick(String busName) {
-        Toast.makeText(this, "Clicked: " + busName, Toast.LENGTH_SHORT).show();
+        Intent i =new Intent(BusListActivity.this,MoreDetailActivity.class);
+        startActivity(i);
     }
 
     @Override
