@@ -6,13 +6,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
 import android.view.View;
-import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class Login extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     private EditText phone, pass;
     private String input_phone, input_pass;
@@ -29,7 +28,7 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent i = new Intent(Login.this, User_Register.class);
+                Intent i = new Intent(LoginActivity.this, UserRegisterActivity.class);
                 startActivity(i);
 
             }
@@ -41,7 +40,7 @@ public class Login extends AppCompatActivity {
                 input_phone = phone.getText().toString();
                 input_pass = pass.getText().toString();
                 if (input_phone.equalsIgnoreCase("106") && input_pass.equalsIgnoreCase("admin")) {
-                    Intent i = new Intent(Login.this, MainActivity.class);
+                    Intent i = new Intent(LoginActivity.this, MainActivity.class);
                     startActivity(i);
                 } else {
                     Toast.makeText(getApplicationContext(), "Please enter correct email and password", Toast.LENGTH_LONG).show();

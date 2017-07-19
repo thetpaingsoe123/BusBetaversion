@@ -16,7 +16,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Login"
+            android:name=".LoginActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -28,12 +28,14 @@
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".User_Register" />
+        <activity android:name=".UserRegisterActivity" />
         <activity
             android:name=".BusListActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".UploadProfile" />
-        <activity android:name=".MoreDetail"></activity>
+        <activity android:name=".UploadProfile"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".MoreDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class User_Register extends AppCompatActivity {
+public class UserRegisterActivity extends AppCompatActivity {
 
     private EditText name,email,pass;
     private Button btnsingup;
@@ -33,7 +33,7 @@ public class User_Register extends AppCompatActivity {
         btnsingup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i=new Intent(User_Register.this,Login.class);
+                Intent i=new Intent(UserRegisterActivity.this,LoginActivity.class);
                 startActivity(i);
                 Toast.makeText(getApplicationContext(),"Wellcome Pls login ",Toast.LENGTH_LONG).show();
 

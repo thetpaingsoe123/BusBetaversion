@@ -18,13 +18,6 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import com.daimajia.slider.library.SliderLayout;
-import com.daimajia.slider.library.SliderTypes.BaseSliderView;
-import com.daimajia.slider.library.SliderTypes.TextSliderView;
-import com.daimajia.slider.library.Tricks.ViewPagerEx;
-
-import java.util.HashMap;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -119,7 +112,7 @@ public class MainActivity extends AppCompatActivity
                 startActivity(upload);
             }
             else if (choice == 2){
-                Intent upload = new Intent(MainActivity.this,MoreDetail.class);
+                Intent upload = new Intent(MainActivity.this,MoreDetailActivity.class);
                 startActivity(upload);
             }
         }
