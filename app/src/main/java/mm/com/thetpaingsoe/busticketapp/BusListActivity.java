@@ -6,8 +6,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
-import android.widget.Toast;
 
 import com.daimajia.slider.library.SliderLayout;
 import com.daimajia.slider.library.SliderTypes.BaseSliderView;
@@ -50,10 +48,11 @@ public class BusListActivity extends AppCompatActivity implements BusListAdapter
         url_maps.put("Game of Thrones", "http://images.boomsbeat.com/data/images/full/19640/game-of-thrones-season-4-jpg.jpg");
 
         HashMap<String,Integer> file_maps = new HashMap<String, Integer>();
-        file_maps.put("Yangon",R.drawable.yangon);
-        file_maps.put("Mandalay",R.drawable.mandalay);
-        file_maps.put("Mawlamyaing",R.drawable.mawlamyaing);
-        file_maps.put("Ngwe Saung", R.drawable.ngwesaung);
+        file_maps.put("Yangon",R.drawable.mpt2);
+        file_maps.put("Mandalay",R.drawable.show1);
+        file_maps.put("Mawlamyaing",R.drawable.mpt2);
+        file_maps.put("Ngwe Saung", R.drawable.show2);
+
 
         for(String name : file_maps.keySet()){
             TextSliderView textSliderView = new TextSliderView(this);
